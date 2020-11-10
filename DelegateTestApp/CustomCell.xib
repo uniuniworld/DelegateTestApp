@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="KGk-i7-Jjw" customClass="CustomCell" customModule="DelegateTestApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPC-HB-oY2">
+                        <rect key="frame" x="137" y="30" width="46" height="47"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="tapButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yTo-0c-ant"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CPC-HB-oY2" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="RC5-0V-0Ef"/>
+                    <constraint firstAttribute="bottom" secondItem="CPC-HB-oY2" secondAttribute="bottom" constant="30" id="WP8-Ki-WbQ"/>
+                    <constraint firstItem="CPC-HB-oY2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="m0D-o5-9xT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="button" destination="CPC-HB-oY2" id="vVb-LQ-DVg"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="109.48660714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
